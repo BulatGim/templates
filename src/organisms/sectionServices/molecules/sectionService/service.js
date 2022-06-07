@@ -1,4 +1,6 @@
-export default function SectionService(props) {
+import "./service.scss"
+
+export default function Service(props) {
     return(
         <div className="sectionService">
             <img src={props.service.img} alt="service image" className="sectionService__preview"/>

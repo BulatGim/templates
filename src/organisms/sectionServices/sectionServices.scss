@@ -1,0 +1,44 @@
+.sectionServices{
+  max-width: 1440px;
+  margin: 100px auto;
+  &__title{
+    text-align: center;
+  }
+  &__container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+  }
+  @media (min-width: 560px) and (max-width: 767px) {
+    margin-top: 50px;
+    &__container{
+      max-width: 430px;
+      margin: 30px auto;
+      display: block;
+      .upperBlock{
+        display: flex;
+      }
+      .lowerBlock{
+        margin-top: 30px;
+        display: flex;
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 559px) {
+    margin-top: 40px;
+    &__container{
+      max-width: 200px;
+      margin: 30px auto;
+      display: block;
+      .upperBlock{
+        display: block;
+      }
+      .lowerBlock{
+        display: block;
+      }
+    }
+  }
+}
