@@ -1,0 +1,22 @@
+.sectionMain{
+  background: url("./imgs/Rectangle 13.svg") center no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title{
+    margin-top: 100px;
+  }
+  &__subtitle{
+    margin-top: 30px;
+  }
+  &__btn{
+    margin-top: 100px;
+    padding: 15px 10px;
+    background: #FFECC8;
+    margin-bottom: 100px;
+  }
+  &__btnDescription{
+    text-transform: uppercase;
+  }
+}
