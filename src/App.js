@@ -2,9 +2,6 @@ import {Route, Routes, BrowserRouter} from "react-router-dom"
 import './App.scss';
 import Template1 from "./templates/template1/template1";
 
-
-
-
 function App() {
   return (
     <div className="App">
