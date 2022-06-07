@@ -3,7 +3,8 @@ import SectionHeader from "../../organisms/sectionHeader/sectionHeader";
 import SectionMain from "../../organisms/sectionMain/sectionMain";
 import SectionAboutUs from "../../organisms/sectionAboutUs/sectionAboutUs";
 import SectionServices from "../../organisms/sectionServices/sectionServices";
-
+import SectionForm from "../../organisms/sectionForm/sectionForm"
+import SectionFooter from "../../organisms/sectionFooter/sectionFooter"
 
 export default function Template1() {
     return(
@@ -12,6 +13,8 @@ export default function Template1() {
             <SectionMain />
             <SectionAboutUs />
             <SectionServices />
+            <SectionForm/>
+            <SectionFooter/>
         </div>
     )
 }
