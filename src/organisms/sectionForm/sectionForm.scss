@@ -21,17 +21,21 @@ $bg_button: #FFECC8;
     &__form {
         display: flex;
         align-items: center;
+        width: 100%;
+        justify-content: space-between;
     }
 
     &__input {
-        max-width: 300px;
+        width: 300px;
         height: 60px;
         background: $bg_input;
         margin-right: 30px;
         padding: 20px;
         font-size: 16px;
         line-height: 130%;
-
+        &:nth-child(3){
+            width: 410px;
+        }
         &::placeholder {
             color: black;
             font-size: 16px;
@@ -52,7 +56,10 @@ $bg_button: #FFECC8;
         }
 
         &__input {
-            max-width: 270px;
+            width: 270px;
+            &:nth-child(3){
+                width: 370px;
+            }
         }
 
         &__button {
@@ -66,7 +73,10 @@ $bg_button: #FFECC8;
         }
 
         &__input {
-            max-width: 220px;
+            width: 220px;
+            &:nth-child(3){
+                width: 300px;
+            }
         }
 
         &__button {
@@ -85,12 +95,15 @@ $bg_button: #FFECC8;
         }
 
         &__input {
-            max-width: 150px;
+            width: 150px;
             padding: 10px;
+            height: 50px;
             padding-left: 20px;
             font-size: 14px;
             margin-right: 20px;
-
+            &:nth-child(3){
+                width: 174px;
+            }
             &::placeholder {
                 font-size: 14px;
             }
@@ -98,6 +111,7 @@ $bg_button: #FFECC8;
 
         &__button {
             width: 100px;
+            height: 50px;
         }
     }
 
@@ -126,7 +140,9 @@ $bg_button: #FFECC8;
             font-size: 12px;
             margin-right: 0;
             margin-bottom: 15px;
-
+            &:nth-child(3){
+                width: 100%;
+            }
             &::placeholder {
                 font-size: 12px;
             }
@@ -168,7 +184,9 @@ $bg_button: #FFECC8;
             font-size: 12px;
             margin-right: 0;
             margin-bottom: 15px;
-
+            &:nth-child(3){
+                width: 100%;
+            }
             &::placeholder {
                 font-size: 12px;
             }
