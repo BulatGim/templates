@@ -12,7 +12,7 @@ export default function SectionServices() {
         <section className="sectionServices">
             <h2 className="sectionServices__title">Услуги</h2>
 
-            {width < 768 ? (
+            {width <= 769 ? (
                 <div className="sectionServices__container">
                     <div className="upperBlock">
                         {services.slice(0, 2).map((item) =>
