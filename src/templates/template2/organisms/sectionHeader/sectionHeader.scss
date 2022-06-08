@@ -1,0 +1,33 @@
+.template2Header{
+    position: sticky;
+    top: 50px;
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1050px;
+        margin: 50px auto;
+    }
+    &__logo{
+        width: 300px;
+        height: 135px;
+    }
+    @media (min-width: 1024px) and (max-width: 1279px){
+        &__container{
+            width: 880px;
+        }
+        &__logo{
+            width: 220px;
+            height: 100px;
+        }
+    }
+/*     @media (min-width: 768px) and (max-width: 1023px){
+        &__container{
+            width: 880px;
+        }
+        &__logo{
+            width: 220px;
+            height: 100px;
+        }
+    } */
+}
