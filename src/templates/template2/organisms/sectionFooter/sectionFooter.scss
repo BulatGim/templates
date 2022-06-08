@@ -1,0 +1,84 @@
+.template2Footer{
+  display: flex;
+  max-width: 1440px;
+  margin: 100px auto 0 auto;
+  justify-content: space-between;
+  &__logo{
+
+  }
+  .contacts{
+    margin: auto 40px auto 0;
+    &__title{
+
+    }
+    &__phone{
+      margin-top: 30px;
+
+    }
+    &__mail{
+      margin-top: 10px;
+    }
+    .socialNetworks{
+      margin-top: 30px;
+      &__item{
+        margin-left: 30px;
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  @media (min-width: 1280px) and (max-width: 1439px){
+    margin: 100px 20px 0 20px;
+    &__logo{
+      max-width: 670px;
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1279px){
+    margin: 100px 20px 0 20px;
+    &__logo{
+      max-width: 460px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px){
+    margin: 100px 20px 0 20px;
+    &__logo{
+      max-width: 365px;
+    }
+    .contacts{
+      .socialNetworks{
+        &__item{
+          margin-left: 10px;
+          max-width: 30px;
+        }
+      }
+    }
+  }
+  @media (min-width: 560px) and (max-width: 767px){
+    margin: 100px 20px 0 20px;
+    &__logo{
+      max-width: 300px;
+    }
+    .contacts{
+      .socialNetworks{
+        &__item{
+          margin-left: 10px;
+          max-width: 30px;
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 559px){
+    &__logo{
+      display: none;
+    }
+    .contacts{
+      .socialNetworks{
+        &__item{
+          margin-left: 10px;
+          max-width: 25px;
+        }
+      }
+    }
+  }
+}
