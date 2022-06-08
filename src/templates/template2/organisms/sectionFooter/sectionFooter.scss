@@ -1,6 +1,6 @@
 .template2Footer{
   display: flex;
-  max-width: 1340px;
+  max-width: 1440px;
   margin: 100px auto 0 auto;
   justify-content: space-between;
   &__logo{
@@ -28,23 +28,23 @@
       }
     }
   }
+  @media (min-width: 1440px) and (max-width: 1560px){
+    max-width: 1340px;
+  }
   @media (min-width: 1280px) and (max-width: 1439px){
     max-width: 1180px;
-    margin: 100px 20px 0 20px;
     &__logo{
       max-width: 670px;
     }
   }
   @media (min-width: 1024px) and (max-width: 1279px){
     max-width: 940px;
-    margin: 100px auto 0 auto;
     &__logo{
       max-width: 460px;
     }
   }
   @media (min-width: 768px) and (max-width: 1023px){
     max-width: 720px;
-    margin: 100px auto 0 auto;
     &__logo{
       max-width: 365px;
     }
@@ -59,7 +59,7 @@
   }
   @media (min-width: 560px) and (max-width: 767px){
     max-width: 525px;
-    margin: 100px auto 0 auto;
+    margin: 50px auto 0 auto;
     &__logo{
       max-width: 300px;
     }
@@ -76,7 +76,7 @@
     display: block;
     text-align: center;
     max-width: 320px;
-    margin: 100px auto 0 auto;
+    margin: 50px auto 0 auto;
     &__logo{
       display: none;
     }
