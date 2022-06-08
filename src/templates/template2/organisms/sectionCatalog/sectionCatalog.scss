@@ -1,0 +1,60 @@
+$button_color:#FFECC8;
+.template2SectionCatalog{
+    margin-top: 80px;
+    &__content{
+        max-width:1440px;
+        margin: 0 auto;
+    }
+    &__container{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__button{
+        padding:15px 10px;
+        margin: 30px auto 0;
+        display: block;
+        background: $button_color;
+        cursor:pointer;
+    }
+    @media (min-width: 1440px) and (max-width: 1500px){
+        &__content{
+            max-width: 1340px;
+        }
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        &__content{
+            max-width: 1180px;
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        &__content{
+            max-width: 940px;
+        }    
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        &__content{
+            max-width: 720px;
+        }
+        &__container{
+            flex-wrap: wrap;
+        }   
+    }
+    @media (min-width: 560px) and (max-width: 767px) {
+        &__content{
+            max-width: 525px;
+        }
+        &__container{
+            flex-wrap: wrap;
+        } 
+    }
+    @media (min-width: 320px) and (max-width: 559px){
+        &__content{
+            max-width: 320px;
+        }
+        &__container{
+            flex-wrap: wrap;
+        } 
+    }
+}

@@ -25,6 +25,9 @@ $bg_color:#FFECC8;
         background-color: $bg_color;
         max-width:214px;
     }
+    @media (min-width: 1440px) and (max-width: 1500px){
+        max-width: 1340px;
+    }
     @media (min-width: 1280px) and (max-width: 1439px){
         max-width:1180px;
     }
