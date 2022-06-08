@@ -7,7 +7,7 @@
 
   }
   .contacts{
-    margin: auto 40px auto 0;
+    margin: auto 0 auto 0;
     &__title{
 
     }
@@ -29,19 +29,22 @@
     }
   }
   @media (min-width: 1280px) and (max-width: 1439px){
+    max-width: 1180px;
     margin: 100px 20px 0 20px;
     &__logo{
       max-width: 670px;
     }
   }
   @media (min-width: 1024px) and (max-width: 1279px){
-    margin: 100px 20px 0 20px;
+    max-width: 940px;
+    margin: 100px auto 0 auto;
     &__logo{
       max-width: 460px;
     }
   }
   @media (min-width: 768px) and (max-width: 1023px){
-    margin: 100px 20px 0 20px;
+    max-width: 720px;
+    margin: 100px auto 0 auto;
     &__logo{
       max-width: 365px;
     }
@@ -55,7 +58,8 @@
     }
   }
   @media (min-width: 560px) and (max-width: 767px){
-    margin: 100px 20px 0 20px;
+    max-width: 525px;
+    margin: 100px auto 0 auto;
     &__logo{
       max-width: 300px;
     }
@@ -69,11 +73,20 @@
     }
   }
   @media (min-width: 320px) and (max-width: 559px){
+    display: block;
+    text-align: center;
+    max-width: 320px;
+    margin: 100px auto 0 auto;
     &__logo{
       display: none;
     }
     .contacts{
+      &__phone{
+        margin-top: 20px;
+
+      }
       .socialNetworks{
+        margin-top: 20px;
         &__item{
           margin-left: 10px;
           max-width: 25px;
