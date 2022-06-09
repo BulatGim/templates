@@ -1,0 +1,93 @@
+.close {
+    animation: cls .5s ease-in 1;
+}
+
+.template2Menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+    background: white;
+    animation: open 1s 1 ease-out;
+
+    &_hiden {
+        opacity: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 200;
+        background: white;
+        pointer-events: none;
+    }
+
+    &__content {
+        width: 90%;
+        height: 50%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 200px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    &__close-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    @media (min-width: 560px) and (max-width: 767px) {
+        &__close-button {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 559px) {
+        &__close-button {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    @keyframes open {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes cls {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+}
