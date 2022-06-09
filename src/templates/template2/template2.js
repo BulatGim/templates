@@ -7,6 +7,7 @@ import SectionReviews from "./organisms/sectionReviews/sectionReviews";
 import './template2.scss';
 import SectionForm from "./organisms/sectionForm/sectionForm";
 import SectionCatalog from './organisms/sectionCatalog/sectionCatalog';
+import SectionOurProjects from "./organisms/sectionOurProjects/sectionOurProjects";
 
 export default function Template2(){
     return (
@@ -16,6 +17,7 @@ export default function Template2(){
             <SectionAboutCompany/>
             <SectionAdvantages/>
             <SectionCatalog/>
+            <SectionOurProjects />
             <SectionReviews />
             <SectionForm />
             <SectionFooter />
