@@ -1,0 +1,135 @@
+$btn_color:#FFECC8;
+
+.template3SectionAbout {
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        margin-top: 50px;
+        padding: 15px 10px;
+        background: $btn_color;
+        cursor: pointer;
+    }
+
+    &__img {
+        width: 640px;
+        height: 475px;
+        object-fit: cover;
+    }
+
+    @media (min-width: 1440px) and (max-width: 1500px) {
+        &__container {
+            max-width: 1340px;
+        }
+    }
+
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        &__container {
+            max-width: 1170px;
+        }
+
+        &__img {
+            width: 580px;
+        }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        &__container {
+            max-width: 940px;
+        }
+
+        &__button {
+            margin-top: 30px;
+        }
+
+        &__img {
+            width: 480px;
+            height: 420px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        &__container {
+            max-width: 720px;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__subtitle {
+            max-width: 240px;
+        }
+
+        &__button {
+            margin-top: 30px;
+        }
+
+        &__img {
+            width: 380px;
+            height: 340px;
+        }
+    }
+
+    @media (min-width: 560px) and (max-width: 767px) {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        &__container {
+            max-width: 525px;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__subtitle {
+            max-width: 200px;
+        }
+
+        &__button {
+            margin-top: 30px;
+        }
+
+        &__img {
+            width: 280px;
+            height: 280px;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 559px) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        &__container {
+            max-width: 320px;
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__img {
+            width: 320px;
+            height: 224px;
+        }
+    }
+}
