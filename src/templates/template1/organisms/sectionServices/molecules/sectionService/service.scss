@@ -7,10 +7,17 @@
   &__description{
     margin-top: 15px;
   }
-  @media (min-width: 1024px) and (max-width: 1279px) {
+  @media (min-width: 1280px) and (max-width: 1439px) {
     max-width: 220px;
     &__preview{
       width: 220px;
+    }
+
+  }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    max-width: 200px;
+    &__preview{
+      width: 200px;
     }
 
   }
