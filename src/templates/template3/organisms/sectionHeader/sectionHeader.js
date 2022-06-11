@@ -3,7 +3,7 @@ import Navigate from './Link/Link'
 import { links } from './links';
 import logo from './imgs/logo.svg';
 import burger from './imgs/burger.svg'
-export default function SectionHeader() {
+export default function SectionHeader(props) {
     return (
         <div className="template3SectionHeader">
             <div className="template3SectionHeader__container">
@@ -15,7 +15,7 @@ export default function SectionHeader() {
                             link={link} />
                     ))}
                 </div>
-                <img src={burger}className="template3SectionHeader__burger" />
+                <img src={burger}className="template3SectionHeader__burger" onClick={props.open} />
             </div>
         </div>
     )
