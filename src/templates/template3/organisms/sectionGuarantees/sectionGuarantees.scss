@@ -1,0 +1,128 @@
+.template3SectionGuarantees {
+    margin-bottom: 150px;
+
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {}
+
+    &__info {
+        width: 850px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__guarantee {
+        display: flex;
+        height: 70px;
+        align-items: center;
+
+        &_dot {
+            display: inline-block;
+            width: 70px;
+            height: 100%;
+            background: url(./imgs/dot.svg) center no-repeat;
+            background-size: cover;
+            margin-right: 10px;
+        }
+    }
+
+    @media (min-width: 1440px) and (max-width: 1500px) {
+        &__container {
+            max-width: 1340px;
+        }
+    }
+
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        &__container {
+            max-width: 1170px;
+        }
+
+        &__info {
+            width: 770px;
+        }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        &__container {
+            max-width: 940px;
+        }
+
+        &__info {
+            width: 620px;
+        }
+
+        &__guarantee {
+            height: 60px;
+
+            &_dot {
+                width: 60px;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        margin-bottom: 100px;
+
+        &__container {
+            max-width: 720px;
+        }
+
+        &__info {
+            width: 460px;
+        }
+
+        &__guarantee {
+            height: 45px;
+
+            &_dot {
+                width: 45px;
+            }
+        }
+    }
+
+    @media (min-width: 560px) and (max-width: 767px) {
+        margin-bottom: 100px;
+
+        &__container {
+            max-width: 525px;
+        }
+
+        &__info {
+            width: 345px;
+        }
+
+        &__guarantee {
+            height: 40px;
+
+            &_dot {
+                width: 40px;
+            }
+        }
+    }
+    @media (min-width: 320px) and (max-width: 559px){
+        margin-bottom: 50px;
+        &__container {
+            max-width: 320px;
+            flex-direction: column;
+        }
+        &__info {
+            grid-template-columns: 1fr;
+            gap:10px;
+            width: 320px;
+            margin-top: 20px;
+        }
+        &__guarantee {
+            height: 40px;
+
+            &_dot {
+                width: 40px;
+            }
+        }
+    }
+}
