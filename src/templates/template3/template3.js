@@ -1,4 +1,5 @@
 import SectionAbout from './organisms/sectionAbout/sectionAbout';
+import SectionAdvantage from './organisms/sectionAdvantage/sectionAdvantage';
 import SectionHeader from './organisms/sectionHeader/sectionHeader';
 import SectionProduct from './organisms/sectionProduct/sectionProduct';
 import SectionSlider from './organisms/sectionSlider/sectionSlider';
@@ -10,6 +11,7 @@ export default function Template3(){
             <SectionAbout/>
             <SectionProduct/>
             <SectionSlider/>
+            <SectionAdvantage/>
         </div>
     )
 }
