@@ -1,0 +1,73 @@
+.template3Form{
+  &__item{
+    padding: 15px 20px;
+    border: 1px solid #000000;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: Inter;
+    resize: none;
+    &::placeholder{
+      font-size: 16px;
+      color: #000000;
+      top: 0;
+      vertical-align: top;
+      font-family: Inter;
+    }
+    &:nth-child(3){
+      height: 90px;
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  &-submit{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    &__btn{
+      background-color: #FFECC8;
+      padding: 15px 100px;
+      cursor: pointer;
+    }
+    &__agreement{
+      margin-left: 30px;
+    }
+  }
+  @media (min-width: 1440px) and (max-width: 1560px){
+    &__item{
+      max-width: 770px;
+    }
+  }
+  @media (min-width: 1280px) and (max-width: 1440px){
+
+  }
+  @media (min-width: 1024px) and (max-width: 1279px){
+
+  }
+  @media (min-width: 768px) and (max-width: 1023px){
+    &__item{
+      max-width: 420px;
+    }
+    &-submit{
+      &__btn{
+        padding: 15px 32px;
+      }
+    }
+  }
+  @media (min-width: 560px) and (max-width: 767px){
+    &-submit{
+      &__btn{
+        padding: 9px 23px;
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 559px){
+    &-submit{
+      &__btn{
+        padding: 9px 23px;
+      }
+    }
+  }
+}

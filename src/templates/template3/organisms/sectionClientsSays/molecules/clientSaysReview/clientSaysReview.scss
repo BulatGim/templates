@@ -1,0 +1,18 @@
+.templateReviewsFormQa-review{
+  margin-top: 30px;
+  width: 100%;
+  background-color: #E6E6E6;
+  padding: 50px 70px;
+  &__description{
+
+  }
+  &__author{
+
+  }
+  &:first-child{
+    margin-top: 0;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 30px 20px;
+  }
+}
