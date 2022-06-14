@@ -1,0 +1,27 @@
+.template4OurProductionCard {
+    width: 245px;
+    height: 245px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        width: 135px;
+        height: 135px;
+    }
+
+    @media screen and (min-width:320px) and (max-width:540px) {
+        width: 160px;
+        height: 200px;
+
+        &__img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+    }
+}
